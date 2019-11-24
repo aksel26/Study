@@ -1,6 +1,7 @@
-from django.conf import path
-from .models import views
+from django.urls import path
+from . import views
+app_name="test_css"
 
-urlpattern=[
-    path('',views.index)
+urlpatterns=[
+    path('',views.index),
 ]
