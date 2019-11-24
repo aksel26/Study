@@ -14,7 +14,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
 ////////////////////////////////////////////////////////////////
 -->
-{% load staticfiles %}
+{%load staticfiles%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,12 +29,12 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <link rel="shortcut icon" href="ftco-32x32.png">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href='{% static "fonts/icomoon/style.css" %}'>
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/animate.css" %}'>
+    <link rel="stylesheet" href='{% static "css/owl.carousel.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/owl.theme.default.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/bootstrap-datepicker.css" %}'>
     
     
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -459,9 +459,9 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
        
         <div id="posts" class="row no-gutter">
           <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/sq_img_1.jpg" class="item-wrap" data-fancybox="gal">
+            <a href='{% static "images/sq_img_1.jpg" %}' class="item-wrap" data-fancybox="gal">
               <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/sq_img_1.jpg">
+              <img class="img-fluid" src='{% static "images/sq_img_1.jpg" %}'>
             </a>
           </div>
           <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
@@ -669,7 +669,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <script src="js/isotope.pkgd.min.js"></script>
   
   <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src='{% static "js/main.js" %}'></script>
 
      
   </body>
